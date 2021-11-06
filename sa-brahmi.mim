@@ -1,0 +1,199 @@
+;; sa-brahmi.mim -- Input method for Brahmi using Harvard-Kyoto keyboard input. 
+;; The symbols for vocalic r and l have been changed, symbols for upadhmaniya, 
+;; jihvamuliya, Tamil Brahmi characters, two varieties of numerals and punctuation
+;; marks have been added.  
+;; Copyright (C) 2021  Dominik Wujastyk 
+
+;; This file is part of the m17n contrib; a sub-part of the m17n
+;; library.
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method sa BRAHMI )
+
+(input-method sa harvard-kyoto)
+
+(description "Sanscrit input method with Harvard-Kyoto convention.
+The table is based on 
+  <http://en.wikipedia.org/wiki/Harvard-Kyoto>
+")
+
+(title "Brahmi")
+
+(map
+ (starter
+  ((S-\ )) ((C-@))
+  ("0") ("1") ("2") ("3") ("4") ("5") ("6") ("7") ("8") ("9")
+  ("A") ("D") ("G") ("H") ("I") ("J") ("L") ("P") ("K")
+  ("M") ("N") ("O") ("R") ("S") ("T") ("U")
+  ("a") ("b") ("c") ("d") ("e") ("g") ("h") ("i")
+  ("j") ("k") ("l") ("m") ("n") ("o") ("p") ("r")
+  ("s") ("t") ("u") ("v") ("y") ("z") (".") ("|") ("-") ("=") ("@") ("*") ("~")
+  ((KP_1)) ((KP_2)) ((KP_3)) ((KP_4)) ((KP_5))
+  ((KP_6)) ((KP_7)) ((KP_8)) ((KP_9)) ((KP_0)))
+
+ (consonant
+  ("k" "𑀓𑁆")
+  ("kh" "𑀔𑁆")
+  ("g" "𑀕𑁆")
+  ("gh" "𑀖𑁆")
+  ("G" "𑀗𑁆")
+  ("c" "𑀘𑁆")
+  ("ch" "𑀙𑁆")
+  ("j" "𑀚𑁆")
+  ("jh" "𑀛𑁆")
+  ("J" "𑀜𑁆")
+  ("T" "𑀝𑁆")
+  ("Th" "𑀞𑁆")
+  ("D" "𑀟𑁆")
+  ("Dh" "𑀠𑁆")
+  ("N" "𑀡𑁆")
+  ("t" "𑀢𑁆")
+  ("th" "𑀣𑁆")
+  ("d" "𑀤𑁆")
+  ("dh" "𑀥𑁆")
+  ("n" "𑀦𑁆")
+  ("p" "𑀧𑁆")
+  ("ph" "𑀨𑁆")
+  ("b" "𑀩𑁆")
+  ("bh" "𑀪𑁆")
+  ("m" "𑀫𑁆")
+  ("y" "𑀬𑁆")
+  ("r" "𑀭𑁆")
+  ("l" "𑀮𑁆")
+  ("v" "𑀯𑁆")
+  ("z" "𑀰𑁆")
+  ("S" "𑀱𑁆")
+  ("s" "𑀲𑁆")
+  ("h" "𑀳𑁆")
+  ("L" "𑀴𑁆")         ; not in Harvard-Kyoto, retroflex l
+  ("zh" "𑀵𑁆")         ; not in Harvard-Kyoto, Dravidian retroflex lateral approximant zh
+  ("RRR" "𑀶𑁆")        ; not in Harvard-Kyoto, Dravidian vallinam r, originally an alveolar t
+  ("NN" "𑀷𑁆"))        ; not in Harvard-Kyoto, Dravidian alveolar n
+
+ (independent
+  ("~" "𑀀")          ; not in Harvard-Kyoto, Candrabindu
+  ("M" "𑀁")
+  ("H" "𑀂")         
+  ("K" "𑀃")          ; not in Harvard-Kyoto, Jihvamuliya          
+  ("P" "𑀄")          ; not in Harvard-Kyoto, Upadhmaniya
+  ("a" "𑀅")
+  ("A" "𑀆")
+  ("i" "𑀇")
+  ("I" "𑀈")
+  ("u" "𑀉")
+  ("U" "𑀊")
+  ("R" "𑀋")
+  ("LL" "𑀍")         ; different in Harvard-Kyoto, vocalic short l 
+  ("e" "𑀏")
+  ("ai" "𑀐")
+  ("o" "𑀑")
+  ("au" "𑀒")
+  ("RR" "𑀌")
+  ("LLL" "𑀎")        ; different in Harvard-Kyoto, vocalic long l
+  ("|" "𑁇")          ; not in Harvard-Kyoto, danda 
+  ("||"  "𑁈")        ; not in Harvard-Kyoto, double danda 
+  ("-" "𑁉")          ; not in Harvard-Kyoto, Brahmi punctuation dot  
+  ("=" "𑁊")          ; not in Harvard-Kyoto, Brahmi punctuation double dot
+  ("--" "𑁋")        ; not in Harvard-Kyoto, Brahmi punctuation line 
+  ("@" "𑁌")         ; not in Harvard-Kyoto, Brahmi punctuation crescend line 
+  ("*" "𑁍")         ; not in Harvard-Kyoto, Brahmi punctuation lotus
+  ("0" "𑁦")          ; Brahmi digit 0
+  ("1" "𑁧")         ; Brahmi digit 1
+  ("2" "𑁨")         ; Brahmi digit 2 
+  ("3" "𑁩")         ; Brahmi digit 3
+  ("4" "𑁪")         ; Brahmi digit 4
+  ("5" "𑁫")         ; Brahmi digit 5
+  ("6" "𑁬")         ; Brahmi digit 6
+  ("7" "𑁭")         ; Brahmi digit 7 
+  ("8" "𑁮")         ; Brahmi digit 8
+  ("9" "𑁯")         ; Brahmi digit 9 
+  ("11" "𑁒")        ; not in Harvard-Kyoto, Brahmi number 1
+  ("22" "𑁓")        ; not in Harvard-Kyoto, Brahmi number 2
+  ("33" "𑁔")        ; not in Harvard-Kyoto, Brahmi number 3
+  ("44" "𑁕")        ; not in Harvard-Kyoto, Brahmi number 4
+  ("55" "𑁖")        ; not in Harvard-Kyoto, Brahmi number 5 
+  ("66" "𑁗")        ; not in Harvard-Kyoto, Brahmi number 6
+  ("77" "𑁘")        ; not in Harvard-Kyoto, Brahmi number 7
+  ("88" "𑁙")        ; not in Harvard-Kyoto, Brahmi number 8
+  ("99" "𑁚")        ; not in Harvard-Kyoto, Brahmi number 9
+  ("10" "𑁛")       ; not in Harvard-Kyoto, Brahmi number 10 
+  ("20" "𑁜")        ; not in Harvard-Kyoto, Brahmi number 20
+  ("30" "𑁝")        ; not in Harvard-Kyoto, Brahmi number 30
+  ("40" "𑁞")        ; not in Harvard-Kyoto, Brahmi number 40
+  ("50" "𑁟")        ; not in Harvard-Kyoto, Brahmi number 50
+  ("60" "𑁠")        ; not in Harvard-Kyoto, Brahmi number 60
+  ("70" "𑁡")        ; not in Harvard-Kyoto, Brahmi number 70
+  ("80" "𑁢")       ; not in Harvard-Kyoto, Brahmi number 80
+  ("90" "𑁣")        ; not in Harvard-Kyoto, Brahmi number 90
+  ("100" "𑁤")       ; not in Harvard-Kyoto, Brahmi number 100 
+  ("1000" "𑁥")      ; not in Harvard-Kyoto, Brahmi number 1000
+  ((KP_0) "𑁦")
+  ((KP_1) "𑁧")
+  ((KP_2) "𑁨")
+  ((KP_3) "𑁩")
+  ((KP_4) "𑁪")
+  ((KP_5) "𑁫")
+  ((KP_6) "𑁬")
+  ((KP_7) "𑁭")
+  ((KP_8) "𑁮")
+  ((KP_9) "𑁯")
+  ((S-\ ) "‌")
+  ((C-@) "‍"))
+
+ (dependent
+  ("a" (delete @-) "")
+  ("A" (delete @-) "𑀸")
+  ("AA" (delete @-) "𑀹")
+  ("i" (delete @-) "𑀺")
+  ("I" (delete @-) "𑀻")
+  ("u" (delete @-) "𑀼")
+  ("U" (delete @-) "𑀽")
+  ("R" (delete @-) "𑀾")
+  ("RR" (delete @-) "𑀿")
+  ("e" (delete @-) "𑁂")
+  ("ai" (delete @-) "𑁃")
+  ("o" (delete @-) "𑁄")
+  ("au" (delete @-) "𑁅")
+  ("LL" (delete @-) "𑁀")
+  ("LLL" (delete @-) "𑁁"))
+
+ (return
+  ((Return)))
+
+ (backspace
+  ((BackSpace) (undo))))
+
+(state
+ (init
+  (starter (pushback 1) (shift intermediate)))
+
+ (intermediate
+  (consonant (shift second))
+  (independent (shift init))
+  (backspace)
+  (return (shift init)))
+
+ (second
+  (consonant)
+  (dependent (shift init))
+  (backspace)
+  (return (shift init))))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: emacs-lisp
+;; End:
