@@ -1,0 +1,403 @@
+;; sa-iast.mim -- Input method for Romanized Sanskrit/Pali using the ITRANS/ISO 15919 scheme.
+;; Copyright (C) 2011  Deepro Chakraborty <deepro@ualberta.ca>
+
+(input-method sa IAST )
+
+(description "Romanized Sanskrit input method with IAST/ISO 15919 convention.
+The table is based on 
+  <http://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration>
+")
+
+(title "ISO 15919")
+
+(map
+ (trans
+;a
+  ("a'" "á")    ;a with acute = acute a
+  ("A'" "Á")    ;A with acute = acute A
+  ("a`" "à")    ;a with grave = grave a
+  ("A`" "À")    ;A with grave = grave A
+  ("a^" "â")    ;a with circumflex = contracted long a / cicumflex a
+  ("A^" "Â")    ;A with circumflex = contracted long A / circumflex A
+  ("..a" "ä")   ;a with diaeresis = hiatal a
+  ("..A" "Ä")   ;A with diaeresis = hiatal A
+  ("^a" "ă")    ;a with breve = short a
+  ("^A" "Ă")    ;A with breve = short A
+  ("~a" "ã")    ;a with tilde = nasalized a in IAST
+  ("~A" "Ã")    ;A with tilde = nasalized A in IAST
+  ("~~a" "a̐")   ;a with candrabindu = nasalized a
+  ("~~A" "A̐")   ;A with candrabindu = nasalized A
+;ā  
+  ("aa" "ā")    ;a with macron = long a
+  ("AA" "Ā")    ;A with macron = long A  
+  ("aa'" "ā́")   ;a macron with acute = acute long a
+  ("AA'" "Ā́")   ;A macron with acute = acute long A
+  ("aa`" "ā̀")   ;a macron with grave = grave long a
+  ("AA`" "Ā̀")   ;A macron with grave = grave long A
+  ("aa^" "ā̂")   ;a macron circumflex = circumflex a
+  ("AA^" "Ā̂")   ;A macron circumflex = circumflex A
+  ("..aa" "ā̈")  ;a macron with diaeresis = hiatal long a
+  ("..AA" "Ā̈")  ;A macron with diaeresis = hiatal long A
+  ("~aa" "ā̃")   ;a macron with tilde = nasalized long a in IAST
+  ("~AA" "Ā̃")   ;A macron with tilde = nasalized long A in IAST
+  ("~~aa" "ā̐")  ;a macron with candrabindu = nasalized long a
+  ("~~AA" "Ā̐")  ;A macron with candrabindu = nasalized long A
+;i
+  ("i'" "í")    ;i with acute = acute i
+  ("I'" "Í")    ;I with acute = acute I
+  ("i`" "ì")    ;i with grave = grave i
+  ("I`" "Ì")    ;I with grave = grave I
+  ("i^" "î")    ;i with circumflex = contracted long i / cicumflex i
+  ("I^" "Î")    ;I with circumflex = contracted long I / circumflex I
+  ("..i" "ï")   ;i with diaeresis = hiatal i
+  ("..I" "Ï")   ;I with diaeresis = hiatal I
+  ("^i" "ĭ")    ;i with breve = short i
+  ("^I" "Ĭ")    ;I with breve = short I
+  ("~i" "ĩ")    ;i with tilde = nasalized i in IAST
+  ("~I" "Ĩ")    ;I with tilde = nasalized I in IAST
+  ("~~i" "i̐")   ;i with candrabindu = nasalized i
+  ("~~I" "I̐")   ;I with candrabindu = nasalized I
+;ī
+  ("ii" "ī")    ;i with macron = long i
+  ("II" "Ī")    ;I with macron = long I
+  ("ii'" "ī́")   ;i macron with acute = acute long i
+  ("II'" "Ī́")   ;I macron with acute = acute long I
+  ("ii`" "ī̀")   ;i macron with grave = grave long i
+  ("II`" "Ī̀")   ;I macron with grave = grave long I
+  ("ii" "ī̈")    ;i macron with diaeresis = hiatal long i
+  ("II" "Ī̈")    ;I macron with diaeresis = hiatal long I
+  ("~ii" "ī̃")   ;i macron with tilde = nasalized long i in IAST
+  ("~II" "Ī̃")   ;I macron with tilde = nasalized long I in IAST
+  ("~~ii" "ī̃")  ;i macron with candrabindu = nasalized long i
+  ("~~II" "Ī̃")  ;I macron with candrabindu = nasalized long I
+;u  
+  ("u'" "ú")    ;u with acute = acute u
+  ("U'" "Ú")    ;U with acute = acute U
+  ("u`" "ù")    ;u with grave = grave u
+  ("U`" "Ù")    ;U with grave = grave U
+  ("u^" "û")    ;u with circumflex = contracted long u / circumflex u
+  ("U^" "Û")    ;U with circumflex = contracted long U / circumflex U
+  ("..u" "ü")   ;u with diaeresis = hiatal u
+  ("..U" "Ü")   ;U with diaeresis = hiatal U
+  ("^u" "ŭ")    ;u with breve = short u
+  ("^U" "Ŭ")    ;U with breve = short U
+  ("~u" "ũ")    ;u with tilde = nasalized u in IAST
+  ("~U" "Ũ")    ;U with tilde = nasalized U in IAST
+  ("~~u" "u̐")   ;u with candrabindu = nasalized u
+  ("~~U" "U̐")   ;U with candrabindu = nasalized U
+;ū
+  ("uu" "ū")    ;u with macron = long u
+  ("UU" "Ū")    ;U with macron = long U
+  ("uu'" "ū́")   ;u macron with acute = acute long u
+  ("UU'" "Ū́")   ;U macron with acute = acute long U  
+  ("uu`" "ū̀")   ;u macron with grave = grave long u
+  ("UU`" "Ū̀")   ;U macron with grave = grave long U
+  ("..uu" "ṻ")  ;u macron with diaeresis = hiatal long u
+  ("..UU" "Ṻ")  ;U macron with diaeresis = hiatal long U
+  ("~uu" "ū̃")   ;u macron with tilde = nasalized long u in IAST
+  ("~UU" "Ū̃")   ;U macron with tilde = nasalized long U in IAST
+  ("~~uu" "ū̐")  ;u macron with candrabindu = nasalized long u
+  ("~~UU" "Ū̐")  ;U macron with candrabindu = nasalized long U
+;ṛ
+  (".r" "ṛ")    ;r dot = vocalic r in IAST / liquid retroflex tap in ISO
+  (".R" "Ṛ")    ;R dot = vocalic R in IAST / liquid retroflex tap in ISO
+  (".r'" "ṛ́")   ;r dot with acute = acute vocalic r in IAST
+  (".R'" "Ṛ́")   ;R dot with acute = acute vocalic R in IAST
+  (".r`" "ṛ̀")   ;r dot with grave = grave vocalic r in IAST
+  (".R`" "Ṛ̀")   ;R dot with grave = grave vocalic R in IAST
+  (".r^" "ṛ̂")   ;r dot with circumflex = circumflex vocalic r
+  (".R^" "Ṛ̂")   ;R dot with circumflex = circumflex vocalic R
+  ("...r" "ṛ̈")  ;r dot with diaeresis = hiatal vocalic r in IAST
+  ("...R" "Ṛ̈")  ;R dot with diaeresis = hiatal vocalic R in IAST
+  ("^.r" "ṛ̆")   ;r dot with breve = short vocalic r in IAST
+  ("^.R" "Ṛ̆")   ;R dot with breve = short Vocalic R in IAST
+  ("~.r" "ṛ̃")   ;r dot with tilde = nasalized vocalic r in IAST
+  ("~.R" "Ṛ̃")   ;R dot with tilde = nasalized vocalic R in IAST
+  ("~~.r" "ṛ̐")  ;r dot with candrabindu = nasalized vocalic r
+  ("~~.R" "Ṛ̐")  ;R dot with candrabindu = nasalized vocalic R
+;r̥
+  (",r" "r̥")    ;r ring below = vocalic r in ISO
+  (",R" "R̥")    ;R ring below = vocalic R in ISO
+  (",r'" "ŕ̥")   ;r ring below with acute = acute vocalic r in ISO
+  (",R'" "Ŕ̥")   ;R ring below with acute = acute vocalic acute R in ISO
+  (",r`" "r̥̀")   ;r ring below with grave = grave vocalic r in ISO
+  (",R`" "R̥̀")   ;R ring below with grave = grave vocalic R in ISO
+  (",r^" "r̥̂")   ;r ring below with circumflex = circumflex vocalic r
+  (",R^" "R̥̂")   ;R ring below with circumflex = circumflex vocalic R
+  ("..,r" "r̥̈")  ;r ring below with diaeresis = hiatal vocalic r in ISO
+  ("..,R" "R̥̈")  ;R ring below with diaeresis = hiatal vocalic R in ISO
+  ("^,r" "r̥̆")   ;r ring with breve = short vocalic r in ISO
+  ("^,R" "R̥̆")   ;R ring with breve = short Vocalic R in ISO
+  ("~,r" "r̥̃")   ;r ring with tilde = nasalized vocalic r in ISO
+  ("~,R" "R̥̃")   ;R ring with tilde = nasalized vocalic R in ISO
+  ("~~,r" "r̥̐")  ;r ring with candrabindu = nasalized vocalic r
+  ("~~,R" "R̥̐")  ;R ring with candrabindu = nasalized vocalic R
+;ṝ
+  (".rr" "ṝ")   ;r dot with macron = long vocalic r in IAST
+  (".RR" "Ṝ")   ;R dot with macron = long vocalic R in IAST  
+  (".rr'" "ṝ́")  ;r dot macron with acute = acute long vocalic r in IAST
+  (".RR'" "Ṝ́")  ;R dot macron with acute = acute long vocalic R in IAST  
+  (".rr`" "ṝ̀")  ;r dot macron with grave = grave long vocalic r in IAST
+  (".RR`" "Ṝ̀")  ;R dot macron with grave = grave long vocalic R in IAST
+  (".rr^" "ṝ̂")  ;r dot macron with circumflex = circumflex long vocalic r in IAST
+  (".RR^" "Ṝ̂")  ;R dot macron with circumflex = circumflex long vocalic R in IAST
+  ("...rr" "ṝ̈") ;r dot macron with diaeresis = hiatal long vocalic r in IAST
+  ("...RR" "Ṝ̈") ;R dot macron with diaeresis = hiatal long vocalic R in IAST
+  ("~.rr" "ṝ̃")  ;r dot macron with tilde = nasalized long vocalic r in IAST
+  ("~.RR" "Ṝ̃")  ;R dot macron with tilde = nasalized long vocalic R in IAST
+  ("~~.rr" "ṝ̐") ;r dot macron with candrabindu = nasalized long vocalic r
+  ("~~.RR" "Ṝ̐") ;R dot macron with candrabindu = nasalized long vocalic R  
+;r̥̄  
+  (",rr" "r̥̄")   ;r ring below with macron = long vocalic r in ISO
+  (",RR" "R̥̄")   ;R ring below with macron = long vocalic R in ISO
+  (",rr'" "r̥̄́")  ;r ring below macron with acute = acute long vocalic r in ISO
+  (",RR'" "R̥̄́")  ;R ring below macron with acute = acute long vocalic R in ISO
+  (",rr`" "r̥̄̀")  ;r ring below macron with grave = grave long vocalic r in ISO
+  (",RR`" "R̥̄̀")  ;R ring below macron with grave = grave long vocalic R in ISO
+  (",rr^" "r̥̄̂")  ;r ring below macron with circumflex = circumflex long vocalic r in ISO
+  (",RR^" "R̥̄̂")  ;R ring below macron with circumflex = circumflex long vocalic R in ISO
+  ("..,rr" "r̥̄̈") ;r ring below macron with diaeresis = hiatal long vocalic r in ISO
+  ("..,RR" "R̥̄̈") ;R ring below macron with diaeresis = hiatal long vocalic R in ISO
+  ("~,rr" "r̥̄̃")  ;r ring macron with tilde = nasalized long vocalic r in ISO
+  ("~,RR" "R̥̄̃")  ;R ring macron with tilde = nasalized long vocalic R in ISO
+  ("~~,rr" "r̥̄̐") ;r ring macron with candrabindu = nasalized long vocalic r
+  ("~~,RR" "R̥̄̐") ;R ring macron with candrabindu = nasalized long vocalic R  
+;ḷ
+  (".l" "ḷ")    ;l dot = vocalic l in IAST / lateral retroflex tap in ISO
+  (".L" "Ḷ")    ;L dot = vocalic l in IAST / lateral retroflex tap in ISO
+  (".l'" "ḷ́")   ;l dot with acute = acute vocalic l in IAST
+  (".L'" "Ḷ́")   ;L dot with acute = acute vocalic L in IAST
+  (".l`" "ḷ̀")   ;l dot with grave = grave vocalic l in IAST
+  (".L`" "Ḷ̀")   ;L dot with grave = grave vocalic L in IAST
+  (".l^" "ḷ̂")   ;l dot with circumflex = circumflex vocalic l in IAST
+  (".L^" "Ḷ̂")   ;L dot with circumflex = circumflex vocalic L in IAST
+  ("...l" "ḷ̈")  ;l dot with diaeresis = hiatal vocalic l in IAST
+  ("...L" "Ḷ̈")  ;L dot with diaeresis = hiatal vocalic l in IAST
+  ("^.l" "ḷ̆")   ;l dot with breve = short vocalic l in IAST
+  ("^.L" "Ḷ̆")   ;L dot with breve = short Vocalic L in IAST
+  ("~.l" "ḷ̃")   ;l dot with tilde = nasalized vocalic l in IAST
+  ("~.L" "Ḷ̃")   ;L dot with tilde = nasalized vocalic L in IAST
+  ("~~.l" "ḷ̐")  ;l dot with candrabindu = nasalized vocalic l
+  ("~~.L~" "Ḷ̐") ;L dot with candrabindu = nasalized vocalic L
+;l̥
+  (",l" "l̥")    ;l ring below = vocalic l in ISO
+  (",L" "L̥")    ;L ring below = vocalic L in ISO
+  (",l'" "ĺ̥")   ;l ring below with acute = acute vocalic l in ISO
+  (",L'" "Ĺ̥")   ;L ring below with acute = acute vocalic L in ISO
+  (",l`" "l̥̀")   ;l ring below with grave = grave vocalic l in ISO
+  (",L`" "L̥̀")   ;L ring below with grave = grave vocalic L in ISO
+  (",l^" "l̥̂")   ;l ring below with circumflex = circumflex vocalic l in ISO
+  (",L^" "L̥̂")   ;L ring below with circumflex = circumflex vocalic L in ISO
+  ("..,l" "l̥̈")  ;l ring below with diaeresis = hiatal vocalic l in ISO
+  ("..,L" "L̥̈")  ;L ring below with diaeresis = hiatal vocalic L in ISO
+  ("^,l" "l̥̆")   ;l ring with breve = short vocalic l in ISO
+  ("^,L" "L̥̆")   ;L ring with breve = short Vocalic L in ISO
+  ("~,l" "l̥̃")   ;l ring with tilde = nasalized vocalic l in ISO
+  ("~,L" "L̥̃")   ;L ring with tilde = nasalized vocalic L in ISO
+  ("~~,l" "l̥̐")  ;l ring with candrabindu = nasalized vocalic l
+  ("~~,L" "L̥̐")  ;L ring with candrabindu = nasalized vocalic L
+;ḹ 
+  (".ll" "ḹ")   ;l dot with macron = long vocalic l in IAST
+  (".LL" "Ḹ")   ;L dot with macron = long vocalic L in IAST
+  (".ll'" "ḹ́")  ;l dot macron with acute = acute long vocalic l in IAST
+  (".LL'" "Ḹ́")  ;L dot macron with acute = acute long vocalic L in IAST
+  (".ll`" "ḹ̀")  ;l dot macron with grave = grave long vocalic l in IAST
+  (".LL`" "Ḹ̀")  ;L dot macron with grave = grave long vocalic L in IAST
+  (".ll^" "ḹ̂")  ;l dot macron with circumflex = circumflex long vocalic l in IAST
+  (".LL^" "Ḹ̂")  ;L dot macron with circumflex = circumflex long vocalic L in IAST
+  ("...ll" "ḹ̈") ;l dot macron with diaeresis = hiatal long vocalic l in IAST
+  ("...LL" "Ḹ̈") ;L dot macron with diaeresis = hiatal long vocalic L in IAST
+  ("~.ll" "ḹ̃")  ;l dot macron with tilde = nasalized long vocalic l in IAST
+  ("~.LL" "Ḹ̃")  ;L dot macron with tilde = nasalized long vocalic L in IAST
+  ("~~.ll" "ḹ̐") ;l dot macron with candrabindu = nasalized long vocalic l
+  ("~~.LL" "Ḹ̐") ;L dot macron with candrabindu = nasalized long vocalic L 
+;l̥  
+  (",ll" "l̥̄")   ;l ring below with macron = long vocalic l in ISO
+  (",LL" "L̥̄")   ;L ring below with macron = long vocalic L in ISO
+  (",ll'" "l̥̄́")  ;l ring below macron with acute = acute long vocalic l in ISO
+  (",LL'" "L̥̄́")  ;L ring below macron with acute = acute long vocalic L in ISO
+  (",ll`" "l̥̄̀")  ;l ring below macron with grave = grave long vocalic l in ISO
+  (",LL`" "L̥̄̀")  ;L ring below macron with grave = grave long vocalic L in ISO
+  (",ll^" "l̥̄̂")  ;l ring below macron with circumflex = circumflex long vocalic l in ISO
+  (",LL^" "L̥̄̂")  ;L ring below macron with circumflex = circumflex long vocalic L in ISO
+  ("..,ll" "l̥̄̈") ;l ring below macron with diaeresis = hiatal long vocalic l in ISO
+  ("..,LL" "L̥̄̈") ;L ring below macron with diaeresis = hiatal long vocalic L in ISO
+  ("~,ll" "l̥̄̃")  ;l ring macron with tilde = nasalized long vocalic l in ISO
+  ("~,LL" "L̥̄̃")  ;L ring macron with tilde = nasalized long vocalic L in ISO
+  ("~~,ll" "l̥̄̐") ;l ring macron with candrabindu = nasalized long vocalic l
+  ("~~,LL" "L̥̄̐") ;L ring macron with candrabindu = nasalized long vocalic L 
+;e
+  ("e'" "é")    ;e with acute = acute e
+  ("E'" "É")    ;E with acute = acute E
+  ("e`" "è")    ;e with grave = grave e
+  ("E`" "È")    ;E with grave = grave e
+  ("e^" "ê")    ;e with circumflex = circumflex e
+  ("E^" "Ê")    ;E with circumflex = circumflex E
+  ("..e" "ë")   ;e with diaeresis = hiatal e
+  ("..E" "Ë")   ;E with diaeresis = hiatal E
+  ("^e" "ĕ")    ;e with breve = short e
+  ("^E" "Ĕ")    ;E with breve = short E
+  ("~e" "ẽ")    ;e with tilde = nasalized e
+  ("~E" "Ẽ")    ;E with tilde = nasalized E
+  ("~~e" "e̐")   ;e with candrabindu = nasalized e
+  ("~~E" "E̐")   ;E with candrabindu = nasalized E
+;ē
+  ("ee" "ē")    ;e with macron = long e in ISO
+  ("EE" "Ē")    ;E with macron = long E in ISO
+  ("ee'" "ḗ")   ;e macron with acute = acute long e in ISO
+  ("EE'" "Ḗ")   ;E macron with acute = acute long E in ISO
+  ("ee`" "ḕ")   ;e macron with grave = grave long e in ISO
+  ("EE`" "Ḕ")   ;E macron with grave = grave long E in ISO
+  ("ee^" "ē̂")   ;e macron with circumflex = circumflex long e in ISO
+  ("EE^" "Ē̂")   ;E macron with circumflex = circumflex long E in ISO
+  ("..ee" "ē̈")  ;e macron with diaeresis = hiatal long e in ISO
+  ("..EE" "Ē̈")  ;E macron with diaeresis = hiatal long E in ISO
+  ("~ee" "ē̃")   ;e macron with tilde = nasalized long e
+  ("~EE" "Ē̃")   ;E macron with tilde = nasalized long E
+  ("~~ee" "ē̐")  ;e macron with candrabindu = nasalized long e in ISO
+  ("~~EE" "Ē̐")  ;E macron with candrabindu = nasalized long E in ISO 
+;o  
+  ("o'" "ó")    ;o with acute = acute o
+  ("O'" "Ó")    ;O with acute = acute O
+  ("o`" "ò")    ;o with acute = acute o
+  ("O`" "Ò")    ;O with acute = acute O
+  ("^o" "ô")    ;o with circumflex = circumflex o
+  ("O^" "Ô")    ;O with circumflex = circumflex O
+  ("..o" "ö")   ;o with diaeresis = hiatal o
+  ("..O" "Ö")   ;O with diaeresis = hiatal O
+  ("^o" "ŏ")    ;o with breve = short o
+  ("^O" "Ŏ")    ;O with breve = short O
+  ("~o" "õ")    ;o with tilde = nasalized o in IAST
+  ("~O" "Õ")    ;O with tilde = nasalized O in IAST
+  ("~~o" "o̐")   ;o with candrabindu = nasalized o
+  ("~~O" "O̐")   ;O with candrabindu = nasalized O
+;ō
+  ("oo" "ō")    ;o with macron = long o in ISO
+  ("OO" "Ō")    ;O with macron = long O in ISO
+  ("oo'" "ṓ")   ;o macron with acute = acute long o in ISO
+  ("OO'" "Ṓ")   ;O macron with acute = acute long O in ISO
+  ("oo`" "ṑ")   ;o macron with grave = grave long o in ISO
+  ("OO`" "Ṑ")   ;O macron with grave = grave long O in ISO
+  ("oo^" "ō̂")   ;o macron with circumflex = circumflex long o in ISO
+  ("OO^" "Ō̂")   ;O macron with circumflex = circumflex long O in ISO
+  ("..oo" "ō̈")  ;o macron with diaeresis = hiatal long o in ISO
+  ("..OO" "Ō̈")  ;O macron with diaeresis = hiatal long O in ISO
+  ("~oo" "ō̃")   ;o macron with tilde = nasalized long o
+  ("~OO" "Ō̃")   ;O macron with tilde = nasalized long O
+  ("~~oo" "ō̐")  ;o macron with candrabindu = nasalized long o in ISO
+  ("~~OO" "Ō̐")  ;O macron with candrabindu = nasalized long O in ISO
+;k-ṅ  
+  ("_k" "ḵ")   
+  ("_K" "Ḵ")
+  ("^k" "k̂")    ;k with circumflex = PIE palato-velar k
+  ("^K" "K̂")    ;K with circumflex = PIE palato-velar K
+  ("'k" "ḱ")    ;k with acute = PIE palato-velar k
+  ("'K" "Ḱ")    ;K with acute = PIE palato-velar K
+  ("_kh" "k͟h")  ;kh with low line below = Hindustani gutteral fricative
+  ("_KH" "K͟H")  ;kh with low line below = Hindustani gutteral fricative
+  ("^g" "ĝ")    ;g with circumflex = PIE palato-velar g
+  ("^G" "Ĝ")    ;G with circumflex = PIE palato-velar G
+  ("'g" "ǵ")    ;g with acute = PIE palato-velar g
+  ("'G" "Ǵ")    ;G with acute = PIE palato-velar G
+  (";n" "ṅ")    ;n with dot above = velar nasal
+  (";N" "Ṅ")    ;N with dot above = velar nasal
+;c-ñ 
+  ("~n" "ñ")    ;n with tilde = palatal nasal
+  ("~N" "Ñ")    ;N with tilde = palatal nasal
+;ṭ-ṇ
+  (".t" "ṭ")    ;t with dot below = retroflex t
+  (".T" "Ṭ")    ;T with dot below = retroflex T
+  (".d" "ḍ")    ;d with dot below = retroflex d
+  (".D" "Ḍ")    ;D with dot below = retroflex D
+  (".n" "ṇ")    ;n with dot below = retroflex n
+  (".N" "Ṇ")     ;N with dot below = retroflex N
+;nasals with n
+  (",n" "n̥")    ;n with ring = PIE vocalic n
+  (",N" "N̥")    ;N with ring = PIE vocalic N
+  ("_n" "ṉ")    ;n with macron below = Dravidian alveolar nasal
+  ("_N" "Ṉ")    ;N with macron below = Dravidian alveolar nasal
+;nasals with m 
+  (",m" "m̥")    ;m with ring = PIE vocalic m
+  (",M" "M̥")    ;M with ring = PIE vocalic M
+  (".M" "Ṃ")    ;m with dot below = anusvara in IAST
+  (".m" "ṃ")    ;M with dot below = anusvara in IAST
+  (";m" "ṁ")    ;m with dot above = anusvara in ISO
+  (";M" "Ṁ")    ;M with dot above = anusvara in ISO
+  ("~m" "m̐")    ;m with candrabindu = candrabindu in ISO
+  ("~M" "M̐")    ;M with candrabindu = candrabindu in ISO
+;glides 
+  ("~y" "ỹ")    ;y with tilde above = nasal y in IAST
+  ("~Y" "Ỹ")    ;Y with tilde above = nasal Y in IAST
+  ("y~" "y̐")    ;y with candrabindu = nasal y
+  ("Y~" "Y̐")    ;Y with candrabindu = nasal Y  
+  (";y" "ẏ")    ;y with dot above = Eastern Indian glide y
+  (";Y" "Ẏ")    ;Y with dot above = Eastern Indian glide Y
+  ("~v" "ṽ")    ;v with tilde above = nasal v in IAST
+  ("~V" "Ṽ")    ;V with tilde above = nasal V in IAST
+  ("v~" "v̐")    ;v with candrabindu = nasal v
+  ("V~" "V̐")    ;V with candrabindu = nasal V
+;liquids
+  ("_r" "ṟ")    ;r with macron below = Dravidian alveolar trill
+  ("_R" "Ṟ")    ;R with macron below = Dravidian alveolar trill
+  ("~l" "l̃")    ;l with tilde above = nasal l in IAST
+  ("~L" "L̃")    ;L with tilde above = nasal L in IAST
+  ("l~" "l̐")    ;l with candrabindu = nasal l
+  ("L~" "L̐")    ;L with candrabindu = nasal L
+  ("_l" "ḻ")    ;l with macron below = Dravidian retroflex lateral approximent
+  ("_L" "Ḻ")    ;L with macron below = Dravidian retroflex lateral approximent
+;aspirates   
+  (".h" "ḥ")    ;h with dot = visarga 
+  (".H" "Ḥ")    ;H with dot = visarga
+  ("_h" "ẖ")    ;h with macron below = jihvamuliya
+  ("_H" "H̱")    ;H with macron below = jihvamuliya
+  ("^h" "ḫ")    ;h with breve below = upadhmaniya / Hittite aspirate
+  ("^H" "Ḫ")    ;H with breve below = upadhmaniya / Hittite aspirate
+  (",h" "ʰ")    ;superscript h = aspirated stop
+;sibilants  
+  (".z" "ẓ")
+  (".Z" "Ẓ")
+  (";s" "ś")    ;s with acute = palatal s
+  (";S" "Ś")    ;S with acute = palatal S
+  (".s" "ṣ")    ;s with dot below = retroflex s
+  (".S" "Ṣ")    ;S with dot below = retroflex S
+  ("^s" "š")    ;s with caron = Hittite sibilant
+  ("^S" "Š")    ;S with caron = Hittite sibilant
+  (""s" "ß")    ;sharp s / German small case eszett
+  (""S" "ẞ")    ;sharp S / German upper case eszett
+  ("_s" "s̱")
+  ("_S" "S̱")
+;others  
+  (",w" "ʷ")    ;superscript w = PIE labio-velar stops  
+  ("_t" "ṯ")    ;t with macron below = Dravidian alveolar t
+  ("_T" "Ṯ")    ;T with macron below = Dravidian alveolar T
+  ("_z" "ẕ")
+  ("_Z" "Ẕ")
+  (";z" "ż")
+  (";Z" "Ż")
+  (".g" "ġ")
+  (".G" "Ġ")
+  (",h" "h̤")
+  (",H" "H̤")
+  (",s" "s̤")
+  (",S" "S̤")
+  (",t" "t̤")
+  (",T" "T̤")
+  ("^c" "ĉ")
+  ("^C" "Ĉ")
+  ("^j" "ĵ")
+  ("^J" "Ĵ")
+  ("^m" "m̆")
+  ("^M" "M̆")
+  ("^n" "n̆")
+  ("^N" "N̆")
+  ("^r" "r̆")
+  ("^R" "R̆")
+  ("^u" "ŭ")
+  ("^U" "Ŭ")
+  ("^z" "ž")
+  ("^Z" "Ž")
+  ))
+
+(state
+ (init
+  (trans)))
