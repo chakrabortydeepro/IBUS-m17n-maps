@@ -1,0 +1,171 @@
+;; sa-sharada.mim -- Input method for Sharada using Harvard-Kyoto keyboard input. 
+;; The symbols for vocalic r and l have been changed, symbols for upadhmaniya, 
+;; jihvamuliya and punctuation marks have been added. 
+ 
+;; Copyright (C) 2021  Deepro Chakraborty 
+
+
+(input-method sa SHARADA )
+
+(input-method sa harvard-kyoto)
+
+(description "Sanscrit input method with Harvard-Kyoto convention.
+The table is based on 
+  <http://en.wikipedia.org/wiki/Harvard-Kyoto>
+")
+
+(title "𑆯𑆳𑆫𑆢𑆳")
+
+(map
+ (starter
+  ((S-\ )) ((C-@))
+  ("0") ("1") ("2") ("3") ("4") ("5") ("6") ("7") ("8") ("9")
+  ("A") ("D") ("G") ("H") ("I") ("J") ("L") ("P") ("K")
+  ("M") ("N") ("O") ("R") ("S") ("T") ("U")
+  ("a") ("b") ("c") ("d") ("e") ("g") ("h") ("i")
+  ("j") ("k") ("l") ("m") ("n") ("o") ("p") ("r")
+  ("s") ("t") ("u") ("v") ("y") ("z") (".") ("|") ("-") ("=") ("@") ("*") ("~") ("#") ("$") ("%") ("^") ("&") ("_") 
+  ((KP_1)) ((KP_2)) ((KP_3)) ((KP_4)) ((KP_5))
+  ((KP_6)) ((KP_7)) ((KP_8)) ((KP_9)) ((KP_0)))
+
+  (consonant
+  ("k" "𑆑𑇀")
+  ("kh" "𑆒𑇀")
+  ("g" "𑆓𑇀")
+  ("gh" "𑆔𑇀")
+  ("G" "𑆕𑇀")
+  ("c" "𑆖𑇀")
+  ("ch" "𑆗𑇀")
+  ("j" "𑆘𑇀")
+  ("jh" "𑆙𑇀")
+  ("J" "𑆚𑇀")
+  ("T" "𑆛𑇀")
+  ("Th" "𑆜𑇀")
+  ("D" "𑆝𑇀")
+  ("Dh" "𑆞𑇀")
+  ("N" "𑆟𑇀")
+  ("t" "𑆠𑇀")
+  ("th" "𑆡𑇀")
+  ("d" "𑆢𑇀")
+  ("dh" "𑆣𑇀")
+  ("n" "𑆤𑇀")
+  ("p" "𑆥𑇀")
+  ("ph" "𑆦𑇀")
+  ("b" "𑆧𑇀")
+  ("bh" "𑆨𑇀")
+  ("m" "𑆩𑇀")
+  ("y" "𑆪𑇀")
+  ("r" "𑆫𑇀")
+  ("l" "𑆬𑇀")
+  ("v" "𑆮𑇀")
+  ("z" "𑆯𑇀")
+  ("S" "𑆰𑇀")
+  ("s" "𑆱𑇀")
+  ("h" "𑆲𑇀"))
+  
+ (independent
+  ("~" "𑆀")          ; not in Harvard-Kyoto, Candrabindu
+  ("&" "𑇏")        ; not in Harvard-Kyoto, Inverted Candrabindu
+  ("M" "𑆁")
+  ("H" "𑆂")         
+  ("K" "𑇂")          ; not in Harvard-Kyoto, Jihvamuliya          
+  ("P" "𑇃")          ; not in Harvard-Kyoto, Upadhmaniya
+  ("a" "𑆃")
+  ("A" "𑆄")
+  ("i" "𑆅")
+  ("I" "𑆆")
+  ("u" "𑆇")
+  ("U" "𑆈")
+  ("R" "𑆉")
+  ("RR" "𑆊")
+  ("LL" "𑆋")     ; different in Harvard-Kyoto, vocalic short l
+  ("LLL" "𑆌")    ; different in Harvard-Kyoto, vocalic long l 
+  ("e" "𑆍")
+  ("ai" "𑆎")
+  ("o" "𑆏")
+  ("au" "𑆐")
+  (".a" "𑇁")
+  ("OM" "𑇄")     ; not in Harvard-Kyoto, sharada om
+  ("''" "॑")      ; not in Harvard-Kyoto, Rgvedic Svarita mark
+  ("_" "॒")       ; not in Harvard-Kyoto, Rgvedic Anudatta mark  
+  ("@" "𑇉")      ; not in Harvard-Kyoto, sharada sandhi mark  
+  ("|" "𑇅")       ; not in Harvard-Kyoto, danda 
+  ("||" "𑇆")     ; not in Harvard-Kyoto, double danda 
+  ("#" "𑇇")       ; not in Harvard-Kyoto, Sharada abbreviation sign  
+  (";" "𑇈")       ; not in Harvard-Kyoto, Sharada separator
+  ("$" "𑇊")      ; not in Harvard-Kyoto, Sharada Nukta
+  ("%" "𑇋")      ; not in Harvard-Kyoto, Sharada vowel modifier mark
+  ("^" "𑇌")      ; not in Harvard-Kyoto, Sharada vowel modifier mark 
+  ("*" "𑇍")      ; not in Harvard-Kyoto, Sharada punctuation Sutra mark
+  ("&" "𑇚")      ; not in Harvard-Kyoto, Sharada Ekam
+  ("&&" "𑇛")     ; not in Harvard-Kyoto, Sharada Siddham
+  ("--" "𑇜")      ; not in Harvard-Kyoto, Sharada headstroke
+  ("=" "𑇝")       ; not in Harvard-Kyoto, Sharada continuation sign
+  ("~~" "𑇞")      ; not in Harvard-Kyoto, Sharada section mark 1
+  ("^^" "𑇟")      ; not in Harvard-Kyoto, Sharada section mark 1
+ ("0" "𑇐")       ; Sharada digit 0
+ ("1" "𑇑")       ; Sharada digit 1
+ ("2" "𑇒")       ; Sharada digit 2 
+ ("3" "𑇓")       ; Sharada digit 3
+ ("4" "𑇔")       ; Sharada digit 4
+ ("5" "𑇕")       ; Sharada digit 5
+ ("6" "𑇖")       ; Sharada digit 6
+ ("7" "𑇗")       ; Sharada digit 7 
+ ("8" "𑇘")       ; Sharada digit 8
+ ("9" "𑇙")       ; Sharada digit 9 
+  ((KP_0) "𑇐")
+  ((KP_1) "𑇑")
+  ((KP_2) "𑇒")
+  ((KP_3) "𑇓")
+  ((KP_4) "𑇔")
+  ((KP_5) "𑇕")
+  ((KP_6) "𑇖")
+  ((KP_7) "𑇗")
+  ((KP_8) "𑇘")
+  ((KP_9) "𑇙")
+  ((S-\ ) "‌")
+  ((C-@) "‍"))
+
+ (dependent
+  ("a" (delete @-) "")
+  ("A" (delete @-) "𑆳")
+  ("i" (delete @-) "𑆴")
+  ("I" (delete @-) "𑆵")
+  ("u" (delete @-) "𑆶")
+  ("U" (delete @-) "𑆷")
+  ("R" (delete @-) "𑆸")
+  ("RR" (delete @-) "𑆹")
+  ("LL" (delete @-) "𑆺")
+  ("LLL" (delete @-) "𑆺")
+  ("e" (delete @-) "𑆼")
+  ("E" (delete @-) "𑇎")  
+  ("ai" (delete @-) "𑆽")
+  ("o" (delete @-) "𑆾")
+  ("au" (delete @-) "𑆿"))
+
+ (return
+  ((Return)))
+
+ (backspace
+  ((BackSpace) (undo))))
+
+(state
+ (init
+  (starter (pushback 1) (shift intermediate)))
+
+ (intermediate
+  (consonant (shift second))
+  (independent (shift init))
+  (backspace)
+  (return (shift init)))
+
+ (second
+  (consonant)
+  (dependent (shift init))
+  (backspace)
+  (return (shift init))))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: emacs-lisp
+;; End:
