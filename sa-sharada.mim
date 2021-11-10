@@ -72,10 +72,13 @@ The table is based on
   ("P" "𑇃")          ; not in Harvard-Kyoto, Upadhmaniya
   ("a" "𑆃")
   ("A" "𑆄")
+  ("aa" "𑆄")
   ("i" "𑆅")
   ("I" "𑆆")
+  ("ii" "𑆆")
   ("u" "𑆇")
   ("U" "𑆈")
+  ("uu" "𑆈")
   ("R" "𑆉")
   ("RR" "𑆊")
   ("LL" "𑆋")     ; different in Harvard-Kyoto, vocalic short l
@@ -129,10 +132,13 @@ The table is based on
  (dependent
   ("a" (delete @-) "")
   ("A" (delete @-) "𑆳")
+  ("aa" (delete @-) "𑆳")
   ("i" (delete @-) "𑆴")
   ("I" (delete @-) "𑆵")
+  ("ii" (delete @-) "𑆵")
   ("u" (delete @-) "𑆶")
   ("U" (delete @-) "𑆷")
+  ("ii" (delete @-) "𑆷")
   ("R" (delete @-) "𑆸")
   ("RR" (delete @-) "𑆹")
   ("LL" (delete @-) "𑆺")
