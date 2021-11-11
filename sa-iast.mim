@@ -261,7 +261,7 @@ The table is based on
   ("O'" "Ó")    ;O with acute = acute O
   ("o`" "ò")    ;o with acute = acute o
   ("O`" "Ò")    ;O with acute = acute O
-  ("^o" "ô")    ;o with circumflex = circumflex o
+  ("o^" "ô")    ;o with circumflex = circumflex o
   ("O^" "Ô")    ;O with circumflex = circumflex O
   ("..o" "ö")   ;o with diaeresis = hiatal o
   ("..O" "Ö")   ;O with diaeresis = hiatal O
