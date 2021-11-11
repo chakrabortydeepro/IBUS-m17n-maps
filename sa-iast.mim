@@ -364,6 +364,8 @@ The table is based on
   ("^S" "Š")    ;S with caron = Hittite sibilant
   (""s" "ß")    ;sharp s / German small case eszett
   (""S" "ẞ")    ;sharp S / German upper case eszett
+  ("~c" "ç")    ;lower case cedilla / old ś / voiceless palatal fricative
+  ("~C" "Ç")    ;upper case cedilla / old Ś / voiceless palatal fricative
   ("_s" "s̱")
   ("_S" "S̱")
 ;others  
