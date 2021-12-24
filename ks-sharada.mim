@@ -88,7 +88,7 @@ Author: Deepro Chakraborty")
   ("|" "𑇅")       ; not in Harvard-Kyoto, danda 
   ("||" "𑇆")     ; not in Harvard-Kyoto, double danda 
   ("#" "𑇇")       ; not in Harvard-Kyoto, Sharada abbreviation sign  
-  (";" "𑇈")       ; not in Harvard-Kyoto, Sharada separator
+  ("-" "𑇈")       ; not in Harvard-Kyoto, Sharada separator
   ("$" "𑇊")      ; not in Harvard-Kyoto, Sharada Nukta
   ("%" "𑇋")      ; not in Harvard-Kyoto, Sharada vowel modifier mark
   ("^" "𑇌")      ; not in Harvard-Kyoto, Sharada vowel modifier mark 
