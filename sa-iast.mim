@@ -307,15 +307,20 @@ The table is based on
 ;ṭ-ṇ
   (".t" "ṭ")    ;t with dot below = retroflex t
   (".T" "Ṭ")    ;T with dot below = retroflex T
+  (".TT" "ʈ")   ;IPA retroflex voiceless stop
   (".d" "ḍ")    ;d with dot below = retroflex d
   (".D" "Ḍ")    ;D with dot below = retroflex D
+  (".DD" "ɖ")   ;IPA retroflex voiced stop
   (".n" "ṇ")    ;n with dot below = retroflex n
-  (".N" "Ṇ")     ;N with dot below = retroflex N
+  (".N" "Ṇ")    ;N with dot below = retroflex N
 ;nasals with n
   (",n" "n̥")    ;n with ring = PIE vocalic n
   (",N" "N̥")    ;N with ring = PIE vocalic N
   ("_n" "ṉ")    ;n with macron below = Dravidian alveolar nasal
   ("_N" "Ṉ")    ;N with macron below = Dravidian alveolar nasal
+  (";NG" "ŋ")   ;eng or engma = IPA velar nasal
+  ("~NJ" "ɲ")   ;IPA palatal nasal
+  (".ND" "ɳ")   ;IPA retroflex nasal
 ;nasals with m 
   (",m" "m̥")    ;m with ring = PIE vocalic m
   (",M" "M̥")    ;M with ring = PIE vocalic M
@@ -353,6 +358,7 @@ The table is based on
   ("^h" "ḫ")    ;h with breve below = upadhmaniya / Hittite aspirate
   ("^H" "Ḫ")    ;H with breve below = upadhmaniya / Hittite aspirate
   (",h" "ʰ")    ;superscript h = aspirated stop
+  (",H" "ʱ")    ;superscript ɦ = breathy voice
 ;sibilants  
   (".z" "ẓ")
   (".Z" "Ẓ")
