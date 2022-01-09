@@ -13,6 +13,7 @@ The table is based on
 (map
  (trans
 ;a
+  (",a" "ɐ")    ;turned a = IPA Sanskrit a
   ("a'" "á")    ;a with acute = acute a
   ("A'" "Á")    ;A with acute = acute A
   ("a`" "à")    ;a with grave = grave a
@@ -301,26 +302,31 @@ The table is based on
   ("'G" "Ǵ")    ;G with acute = PIE palato-velar G
   (";n" "ṅ")    ;n with dot above = velar nasal
   (";N" "Ṅ")    ;N with dot above = velar nasal
-;c-ñ 
+;c-ñ
+  ("~J" "ɟ")    ;IPA voiced palatal plosive 
   ("~n" "ñ")    ;n with tilde = palatal nasal
   ("~N" "Ñ")    ;N with tilde = palatal nasal
 ;ṭ-ṇ
   (".t" "ṭ")    ;t with dot below = retroflex t
   (".T" "Ṭ")    ;T with dot below = retroflex T
-  (".TT" "ʈ")   ;IPA retroflex voiceless stop
+  ("~T" "ʈ")   ;IPA retroflex voiceless stop
   (".d" "ḍ")    ;d with dot below = retroflex d
   (".D" "Ḍ")    ;D with dot below = retroflex D
-  (".DD" "ɖ")   ;IPA retroflex voiced stop
+  ("~D" "ɖ")   ;IPA retroflex voiced stop
   (".n" "ṇ")    ;n with dot below = retroflex n
   (".N" "Ṇ")    ;N with dot below = retroflex N
+;t-n
+  ("~t" "t̪")    ;t with bridge below = IPA dental voiceless stop
+  ("~d" "d̪")    ;d with bridge below = IPA dental voiced stop
 ;nasals with n
   (",n" "n̥")    ;n with ring = PIE vocalic n
   (",N" "N̥")    ;N with ring = PIE vocalic N
   ("_n" "ṉ")    ;n with macron below = Dravidian alveolar nasal
   ("_N" "Ṉ")    ;N with macron below = Dravidian alveolar nasal
-  (";NG" "ŋ")   ;eng or engma = IPA velar nasal
+  ("~NG" "ŋ")   ;eng or engma = IPA velar nasal
   ("~NJ" "ɲ")   ;IPA palatal nasal
-  (".ND" "ɳ")   ;IPA retroflex nasal
+  (";ND" "ɳ")   ;IPA retroflex nasal
+  ("~nd" "n̪")   ;IPA dental nasal
 ;nasals with m 
   (",m" "m̥")    ;m with ring = PIE vocalic m
   (",M" "M̥")    ;M with ring = PIE vocalic M
