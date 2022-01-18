@@ -350,6 +350,7 @@ The table is based on
 ;liquids
   ("_r" "ṟ")    ;r with macron below = Dravidian alveolar trill
   ("_R" "Ṟ")    ;R with macron below = Dravidian alveolar trill
+  ("~R" "ɾ")    ;voiced alveolar flap = Sanskrit repha in IPA
   ("~l" "l̃")    ;l with tilde above = nasal l in IAST
   ("~L" "L̃")    ;L with tilde above = nasal L in IAST
   ("l~" "l̐")    ;l with candrabindu = nasal l
