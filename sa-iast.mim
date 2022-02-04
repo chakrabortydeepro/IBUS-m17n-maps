@@ -385,7 +385,7 @@ The table is based on
   (",w" "ʷ")    ;superscript w = PIE labio-velar stops  
   ("_t" "ṯ")    ;t with macron below = Dravidian alveolar t
   ("_T" "Ṯ")    ;T with macron below = Dravidian alveolar T
-  ("\rt" "√")   ;root symbol
+  ("~rt" "√")   ;root symbol
   ("_z" "ẕ")
   ("_Z" "Ẕ")
   (";z" "ż")
