@@ -161,7 +161,7 @@ Shift-SPC Control-SPC
   ("#" "্র")				; not in ITRANS Bengali table
   ("$" "র্")				; not in ITRANS Bengali table
   ("^" "়")				; not in ITRANS Bengali table
-  ("*" "শ্র")				; not in ITRANS Bengali table
+  ("*" "‌")				; Zero Width Non-Joiner. General Punctuationnot in ITRANS Bengali table
   ("]" "়")				; not in ITRANS Bengali table
   ((KP_1) "১")
   ((KP_2) "২")
