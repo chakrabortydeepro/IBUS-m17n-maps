@@ -28,6 +28,10 @@ The table is based on
   ("~A" "Ã")    ;A with tilde = nasalized A in IAST
   ("~~a" "a̐")   ;a with candrabindu = nasalized a
   ("~~A" "A̐")   ;A with candrabindu = nasalized A
+  ("a+e" "æ")   ;a + e = near-low front unrounded vowel
+  ("A+E" "Æ")   ;A + E uppercase
+  ("~a+e" "æ̃")  ;a + e with tilde = nasal near-low front unrounded vowel
+  ("~A+E" "Æ̃")  ;A + E + tilde uppercase
 ;ā  
   ("aa" "ā")    ;a with macron = long a
   ("AA" "Ā")    ;A with macron = long A  
@@ -272,6 +276,10 @@ The table is based on
   ("~O" "Õ")    ;O with tilde = nasalized O in IAST
   ("~~o" "o̐")   ;o with candrabindu = nasalized o
   ("~~O" "O̐")   ;O with candrabindu = nasalized O
+  ("o+e" "œ")   ;o + e = French mid-front rounded vowel
+  ("O+E" "Œ")   ;O + E uppercase
+  ("~o+e" "œ̃")  ;o + e + tilde = nasal mid-front rounded vowel
+  ("~O+E" "Œ̃")  ;O + E + tilde = uppercase
 ;ō
   ("oo" "ō")    ;o with macron = long o in ISO
   ("OO" "Ō")    ;O with macron = long O in ISO
@@ -321,6 +329,8 @@ The table is based on
 ;nasals with n
   (",n" "n̥")    ;n with ring = PIE vocalic n
   (",N" "N̥")    ;N with ring = PIE vocalic N
+  (",nn" "n̥̄")   ;n with ring and macron = PIE long vocalic n
+  (",NN" "N̥̄")   ;N with ring and macron = PIE long vocalic N
   ("_n" "ṉ")    ;n with macron below = Dravidian alveolar nasal
   ("_N" "Ṉ")    ;N with macron below = Dravidian alveolar nasal
   ("~NG" "ŋ")   ;eng or engma = IPA velar nasal
@@ -330,6 +340,8 @@ The table is based on
 ;nasals with m 
   (",m" "m̥")    ;m with ring = PIE vocalic m
   (",M" "M̥")    ;M with ring = PIE vocalic M
+  (",mm" "m̥̄")   ;m with ring and macron = PIE long vocalic m
+  (",MM" "M̥̄")   ;M with ring and macron = PIE long vocalic M
   (".M" "Ṃ")    ;m with dot below = anusvara in IAST
   (".m" "ṃ")    ;M with dot below = anusvara in IAST
   (";m" "ṁ")    ;m with dot above = anusvara in ISO
