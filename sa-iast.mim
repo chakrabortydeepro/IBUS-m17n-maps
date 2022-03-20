@@ -75,6 +75,7 @@ The table is based on
   ("~II" "Ī̃")   ;I macron with tilde = nasalized long I in IAST
   ("~~ii" "ī̃")  ;i macron with candrabindu = nasalized long i
   ("~~II" "Ī̃")  ;I macron with candrabindu = nasalized long I
+  ("(i" "i̯")    ;i with inverted breve below = consonantal / glide / semivowel i
 ;u  
   ("u'" "ú")    ;u with acute = acute u
   ("U'" "Ú")    ;U with acute = acute U
@@ -90,6 +91,7 @@ The table is based on
   ("~U" "Ũ")    ;U with tilde = nasalized U in IAST
   ("~~u" "u̐")   ;u with candrabindu = nasalized u
   ("~~U" "U̐")   ;U with candrabindu = nasalized U
+  ("(u" "u̯")    ;u with inverted breve below = consonantal / glide / semivowel u
 ;ū
   ("uu" "ū")    ;u with macron = long u
   ("UU" "Ū")    ;U with macron = long U
