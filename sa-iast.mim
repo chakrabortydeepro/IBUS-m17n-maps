@@ -429,6 +429,7 @@ The table is based on
   (",1" "₁")    ;subscript 1
   (",2" "₂")    ;subscript 2
   (",3" "₃")    ;subscript 3
+  (".?" "¿")    ;inverted question mark
   ))
 
 (state
