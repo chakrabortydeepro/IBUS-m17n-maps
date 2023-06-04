@@ -65,7 +65,7 @@ The table is based on
   
  (independent
   ("~" "𑆀")          ; not in Harvard-Kyoto, Candrabindu
-  ("&" "𑇏")        ; not in Harvard-Kyoto, Inverted Candrabindu
+  ("~M" "𑇏")        ; not in Harvard-Kyoto, Inverted Candrabindu
   ("M" "𑆁")
   ("H" "𑆂")         
   ("K" "𑇂")          ; not in Harvard-Kyoto, Jihvamuliya          
