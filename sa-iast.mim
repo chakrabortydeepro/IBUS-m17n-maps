@@ -426,6 +426,7 @@ The table is based on
   ("^U" "Ŭ")
   ("^z" "ž")
   ("^Z" "Ž")
+  (",0" "₀")    ;subscript 0
   (",1" "₁")    ;subscript 1
   (",2" "₂")    ;subscript 2
   (",3" "₃")    ;subscript 3
