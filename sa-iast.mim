@@ -237,8 +237,8 @@ The table is based on
   ("E'" "É")    ;E with acute = acute E
   ("e`" "è")    ;e with grave = grave e
   ("E`" "È")    ;E with grave = grave e
-  ("e^" "ê")    ;e with circumflex = circumflex e
-  ("E^" "Ê")    ;E with circumflex = circumflex E
+  ("e^" "ê")    ;e with circumflex = circumflex e
+  ("E^" "Ê")    ;E with circumflex = circumflex E
   ("..e" "ë")   ;e with diaeresis = hiatal e
   ("..E" "Ë")   ;E with diaeresis = hiatal E
   ("^e" "ĕ")    ;e with breve = short e
