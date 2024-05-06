@@ -392,6 +392,8 @@ The table is based on
   ("''" "”")    ;right double quotation mark
   ("~`" "‘")    ;left single quotation mark
   ("~'" "’")    ;right double quotation mark
+  ("--" "–")    ; endash
+  ("---" "—")   ; emdash
   ("_z" "ẕ")
   ("_Z" "Ẕ")
   (";z" "ż")
