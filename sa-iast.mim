@@ -177,6 +177,8 @@ The table is based on
   (".L`" "Ḷ̀")   ;L dot with grave = grave vocalic L in IAST
   (".l^" "ḷ̂")   ;l dot with circumflex = circumflex vocalic l in IAST
   (".L^" "Ḷ̂")   ;L dot with circumflex = circumflex vocalic L in IAST
+  ("..l" "l̤")   ;l dot with diaeresis Below = retroflex lateral approximant: Tamil ழ்
+  ("..L" "L̤")   ;L dot with diaeresis Below = retroflex lateral approximant: Tamil ழ்
   ("...l" "ḷ̈")  ;l dot with diaeresis = hiatal vocalic l in IAST
   ("...L" "Ḷ̈")  ;L dot with diaeresis = hiatal vocalic l in IAST
   ("^.l" "ḷ̆")   ;l dot with breve = short vocalic l in IAST
