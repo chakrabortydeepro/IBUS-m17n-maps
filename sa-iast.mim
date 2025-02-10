@@ -31,6 +31,8 @@ The table is based on
   ("A+E" "Æ")   ;A + E uppercase
   ("~a+e" "æ̃")  ;a + e with tilde = nasal near-low front unrounded vowel
   ("~A+E" "Æ̃")  ;A + E + tilde uppercase
+  ("_a" "a̲")    ;a with low line (underbar)
+  ("'a" "a̍")    ;a with vertical line above
 ;ā  
   ("aa" "ā")    ;a with macron = long a
   ("AA" "Ā")    ;A with macron = long A  
@@ -46,6 +48,8 @@ The table is based on
   ("~AA" "Ā̃")   ;A macron with tilde = nasalized long A in IAST
   ("~~aa" "ā̐")  ;a macron with candrabindu = nasalized long a
   ("~~AA" "Ā̐")  ;A macron with candrabindu = nasalized long A
+  ("_aa" "ā̲")   ;a macron with low line (underbar)
+  ("'aa" "ā̍")   ;a macron with vertical line above
 ;i
   ("i'" "í")    ;i with acute = acute i
   ("I'" "Í")    ;I with acute = acute I
@@ -61,6 +65,8 @@ The table is based on
   ("~I" "Ĩ")    ;I with tilde = nasalized I in IAST
   ("~~i" "i̐")   ;i with candrabindu = nasalized i
   ("~~I" "I̐")   ;I with candrabindu = nasalized I
+  ("_i" "i̲")    ;i with low line (underbar)
+  ("'i" "i̍")    ;i with vertical line above
 ;ī
   ("ii" "ī")    ;i with macron = long i
   ("II" "Ī")    ;I with macron = long I
@@ -75,6 +81,8 @@ The table is based on
   ("~~ii" "ī̃")  ;i macron with candrabindu = nasalized long i
   ("~~II" "Ī̃")  ;I macron with candrabindu = nasalized long I
   ("(i" "i̯")    ;i with inverted breve below = consonantal / glide / semivowel i
+  ("_ii" "ī̲")   ;i macron with low line (underbar)
+  ("'ii" "ī̍")   ;i macron with vertical line above
 ;u  
   ("u'" "ú")    ;u with acute = acute u
   ("U'" "Ú")    ;U with acute = acute U
@@ -91,6 +99,8 @@ The table is based on
   ("~~u" "u̐")   ;u with candrabindu = nasalized u
   ("~~U" "U̐")   ;U with candrabindu = nasalized U
   ("(u" "u̯")    ;u with inverted breve below = consonantal / glide / semivowel u
+  ("_u" "u̲")    ;u with low line (underbar)
+  ("'u" "u̍")    ;u with vertical line above
 ;ū
   ("uu" "ū")    ;u with macron = long u
   ("UU" "Ū")    ;U with macron = long U
@@ -104,6 +114,8 @@ The table is based on
   ("~UU" "Ū̃")   ;U macron with tilde = nasalized long U in IAST
   ("~~uu" "ū̐")  ;u macron with candrabindu = nasalized long u
   ("~~UU" "Ū̐")  ;U macron with candrabindu = nasalized long U
+  ("_uu" "ū̲")   ;u macron with low line (underbar)
+  ("'uu" "ū̍")   ;u macron with vertical line above
 ;ṛ
   (".r" "ṛ")    ;r dot = vocalic r in IAST / liquid retroflex tap in ISO
   (".R" "Ṛ")    ;R dot = vocalic R in IAST / liquid retroflex tap in ISO
@@ -121,6 +133,9 @@ The table is based on
   ("~.R" "Ṛ̃")   ;R dot with tilde = nasalized vocalic R in IAST
   ("~~.r" "ṛ̐")  ;r dot with candrabindu = nasalized vocalic r
   ("~~.R" "Ṛ̐")  ;R dot with candrabindu = nasalized vocalic R
+  ("_.r" "ṛ̲")   ;r dot low line (underbar)
+  ("'.r" "ṛ̍")   ;r dot with vertical line above
+  
 ;r̥
   (",r" "r̥")    ;r ring below = vocalic r in ISO
   (",R" "R̥")    ;R ring below = vocalic R in ISO
@@ -152,7 +167,9 @@ The table is based on
   ("~.rr" "ṝ̃")  ;r dot macron with tilde = nasalized long vocalic r in IAST
   ("~.RR" "Ṝ̃")  ;R dot macron with tilde = nasalized long vocalic R in IAST
   ("~~.rr" "ṝ̐") ;r dot macron with candrabindu = nasalized long vocalic r
-  ("~~.RR" "Ṝ̐") ;R dot macron with candrabindu = nasalized long vocalic R  
+  ("~~.RR" "Ṝ̐") ;R dot macron with candrabindu = nasalized long vocalic R
+  ("_.rr" "ṝ̲")   ;r dot low line (underbar)
+  ("'.rr" "ṝ̍")   ;r dot with vertical line above
 ;r̥̄  
   (",rr" "r̥̄")   ;r ring below with macron = long vocalic r in ISO
   (",RR" "R̥̄")   ;R ring below with macron = long vocalic R in ISO
@@ -187,6 +204,8 @@ The table is based on
   ("~.L" "Ḷ̃")   ;L dot with tilde = nasalized vocalic L in IAST
   ("~~.l" "ḷ̐")  ;l dot with candrabindu = nasalized vocalic l
   ("~~.L~" "Ḷ̐") ;L dot with candrabindu = nasalized vocalic L
+  ("_.l" "ḷ̲")   ;l dot low line (underbar)
+  ("'.l" "ḷ̍")   ;l dot with vertical line above
 ;l̥
   (",l" "l̥")    ;l ring below = vocalic l in ISO
   (",L" "L̥")    ;L ring below = vocalic L in ISO
@@ -249,6 +268,8 @@ The table is based on
   ("~E" "Ẽ")    ;E with tilde = nasalized E
   ("~~e" "e̐")   ;e with candrabindu = nasalized e
   ("~~E" "E̐")   ;E with candrabindu = nasalized E
+  ("_e" "e̲")    ;e with low line (underbar)
+  ("'e" "e̍")    ;e with vertical line above
 ;ē
   ("ee" "ē")    ;e with macron = long e in ISO
   ("EE" "Ē")    ;E with macron = long E in ISO
@@ -283,6 +304,8 @@ The table is based on
   ("O+E" "Œ")   ;O + E uppercase
   ("~o+e" "œ̃")  ;o + e + tilde = nasal mid-front rounded vowel
   ("~O+E" "Œ̃")  ;O + E + tilde = uppercase
+  ("_o" "o̲")    ;o with low line (underbar)
+  ("'o" "o̍")    ;o with vertical line above
 ;ō
   ("oo" "ō")    ;o with macron = long o in ISO
   ("OO" "Ō")    ;O with macron = long O in ISO
@@ -433,6 +456,8 @@ The table is based on
   (",7" "₇")    ;subscript 7
   (",8" "₈")    ;subscript 8
   (",9" "₉")    ;subscript 9
+  ("_'1" "1̲̍")   ;1 with low line (underbar) and vertical line above
+  ("_'3" "3̲̍")   ;3 with low line (underbar) and vertical line above
   (".?" "¿")    ;inverted question mark
   (".!" "¡")    ;inverted exclamation mark
   ))
